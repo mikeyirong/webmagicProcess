@@ -1,6 +1,5 @@
 package com.factory;
 
-import org.jsoup.Jsoup;
 
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;

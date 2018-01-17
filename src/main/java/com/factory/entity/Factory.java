@@ -1,10 +1,24 @@
-package com.factory;
+package com.factory.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "factory_base")
 public class Factory {
+
+	private int id;
 	private String name;
 	private String location;
 	private String telphone;
-	private String linkman;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
 
 	public String getName() {
 		return name;
@@ -28,14 +42,6 @@ public class Factory {
 
 	public void setTelphone(String telphone) {
 		this.telphone = telphone;
-	}
-
-	public String getLinkman() {
-		return linkman;
-	}
-
-	public void setLinkman(String linkman) {
-		this.linkman = linkman;
 	}
 
 }
