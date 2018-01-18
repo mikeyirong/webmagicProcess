@@ -1,13 +1,14 @@
 package com.factory.util;
 
 import com.avaje.ebean.EbeanServer;
-import com.tvc.be.db.PersistenceFactory;
+
+import mike.dpwrapp.PersisterFactory;
 
 public abstract class EbeanFactoryUtil {
 	public static EbeanServer ebean ;
 	public static EbeanServer getEbean() {
 		if(ebean==null) {
-			ebean = PersistenceFactory.load("classpath:dbconfig.properties").getEbeanServer();
+			ebean = PersisterFactory.load("classpath:dbconfig.properties").getEbean();
 		}
 		return ebean;
 	}

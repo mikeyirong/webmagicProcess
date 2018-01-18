@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.avaje.ebean.EbeanServer;
 import com.factory.entity.Url;
-import com.tvc.be.db.PersistenceFactory;
+import com.factory.util.EbeanFactoryUtil;
 
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;
@@ -14,7 +14,7 @@ import us.codecraft.webmagic.selector.Selectable;
 
 public class Spiderfactory implements PageProcessor {
 	public Site site = Site.me().setSleepTime(1000).setTimeOut(5000);
-	public static EbeanServer evb = PersistenceFactory.load("classpath:dbconfig.properties").getEbeanServer();
+	public static EbeanServer evb = EbeanFactoryUtil.getEbean();
 	public static int number =1 ;
 	public static int count = 0;
 	

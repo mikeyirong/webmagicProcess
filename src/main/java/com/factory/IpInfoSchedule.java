@@ -11,7 +11,7 @@ public class IpInfoSchedule {
 		while(true) {
 		  try {
 		    new	KuaidaiProcess().execute();
-		    Thread.currentThread().sleep(10000);
+		    Thread.currentThread().sleep(100000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

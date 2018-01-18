@@ -54,15 +54,9 @@
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.avaje/ebean -->
 		<dependency>
-			<groupId>org.avaje</groupId>
-			<artifactId>ebean</artifactId>
-			<version>2.8.1</version>
-		</dependency>
-		<!-- https://mvnrepository.com/artifact/javax.persistence/persistence-api -->
-		<dependency>
-			<groupId>javax.persistence</groupId>
-			<artifactId>persistence-api</artifactId>
-			<version>1.0</version>
+			<groupId>mike</groupId>
+			<artifactId>dpwrapp</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 </project>
